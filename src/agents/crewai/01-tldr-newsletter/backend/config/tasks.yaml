@@ -1,0 +1,38 @@
+research_task:
+  description: >
+    Research the topic '{topic}' and find the 5 most important recent
+    stories or developments. For each story, provide:
+    1. A clear headline
+    2. The source URL (if available)
+    3. A brief summary of what happened
+    4. Why it matters to tech professionals
+    Search the web for the latest information.
+  expected_output: >
+    A numbered list of 5 tech stories with headline, source, summary,
+    and significance for each.
+  agent: researcher
+
+write_task:
+  description: >
+    Take the researched stories and write each one as a TLDR-style summary.
+    Each summary should be exactly 2-3 sentences: the first sentence states
+    what happened, the remaining sentences explain why it matters.
+    Keep the tone professional but conversational.
+  expected_output: >
+    5 TLDR-style story summaries, each 2-3 sentences, with the original
+    headline preserved. Ready for editorial organization.
+  agent: writer
+
+edit_task:
+  description: >
+    Organize the written summaries into a professional newsletter format:
+    1. Create a catchy subject line for the newsletter
+    2. Group stories into sections: HEADLINES (top 2), DEEP DIVES (2), QUICK HITS (1)
+    3. Add a brief intro paragraph welcoming readers
+    4. Ensure consistent formatting throughout
+    5. Add section headers with emoji indicators
+  expected_output: >
+    A complete, formatted newsletter with subject line, intro, and stories
+    organized into HEADLINES, DEEP DIVES, and QUICK HITS sections.
+    Ready to send to subscribers.
+  agent: editor
