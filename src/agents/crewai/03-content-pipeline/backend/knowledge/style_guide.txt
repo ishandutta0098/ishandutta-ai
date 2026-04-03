@@ -1,0 +1,33 @@
+BRAND STYLE GUIDE — TechVision Inc.
+
+VOICE & TONE:
+- Professional but conversational — write like a knowledgeable friend, not a textbook
+- Use active voice, keep sentences concise
+- Address the reader directly with "you" and "your"
+- Be confident but not arrogant — show, don't just tell
+
+FORMATTING:
+- Use clear headings and subheadings (H2 for main sections, H3 for subsections)
+- Keep paragraphs to 3-4 sentences max
+- Use bullet points for lists of 3+ items
+- Include a compelling introduction that hooks the reader in the first sentence
+- End with a clear call-to-action or key takeaway
+
+TERMINOLOGY:
+- Say "AI-powered" not "artificial intelligence powered"
+- Say "team members" not "employees"
+- Say "solution" not "product" when referring to our offerings
+- Say "insights" not "data" when talking about analytics output
+- Avoid jargon unless necessary — always explain technical terms
+
+CONTENT STRUCTURE:
+- Hook → Context → Main Points → Examples → Takeaway
+- Every claim should be supported with data, examples, or expert quotes
+- Include at least one real-world example or case study
+- Target reading level: 8th grade (clear and accessible)
+
+BRAND VALUES TO REFLECT:
+- Innovation — we push boundaries
+- Transparency — we explain our thinking
+- Empowerment — we help readers take action
+- Community — we're in this together
