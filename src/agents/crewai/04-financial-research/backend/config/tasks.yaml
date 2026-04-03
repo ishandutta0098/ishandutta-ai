@@ -1,0 +1,47 @@
+collect_data_task:
+  description: >
+    Collect comprehensive financial data for {company} ({ticker}).
+    Gather: 1) Company overview and business segments,
+    2) Key financial metrics (revenue, net income, margins, growth rates),
+    3) Market data (market cap, P/E ratio, 52-week range),
+    4) Top 3-5 competitors with brief comparisons,
+    5) Recent news and developments from the last quarter.
+    Focus on the most recent fiscal year and any available quarterly data.
+  expected_output: >
+    A structured financial data package including: company overview,
+    key financial metrics table, market data, competitor comparison,
+    and recent developments summary. All data should include sources.
+  agent: data_collector
+
+analyze_data_task:
+  description: >
+    Analyze the collected financial data for {company} ({ticker}).
+    Provide: 1) Performance trend analysis (revenue growth, margin trends),
+    2) Competitive positioning (strengths, weaknesses vs peers),
+    3) Key risks and catalysts for the next 12 months,
+    4) Investment thesis (bull case and bear case),
+    5) Overall assessment with a suggested rating (Buy/Hold/Sell).
+    Base all analysis on the data collected.
+  expected_output: >
+    A comprehensive financial analysis with: trend analysis, competitive assessment,
+    risk/catalyst matrix, bull/bear investment thesis, and an overall rating
+    with price target rationale. Analysis should be data-driven and balanced.
+  agent: financial_analyst
+
+write_report_task:
+  description: >
+    Write a professional equity research report for {company} ({ticker}).
+    Structure the report as:
+    1) Executive Summary (2-3 paragraphs with rating and key thesis),
+    2) Company Overview (business description, segments, market position),
+    3) Financial Analysis (key metrics, trends, margins),
+    4) Competitive Landscape (peer comparison),
+    5) Risk Factors (key risks to the thesis),
+    6) Investment Thesis (bull/bear cases, catalysts),
+    7) Conclusion and Rating.
+    The report should be professional, concise, and actionable.
+  expected_output: >
+    A complete, professional equity research report with all 7 sections,
+    following institutional format. The report should be 800-1200 words,
+    include specific data points, and provide a clear investment recommendation.
+  agent: report_writer
