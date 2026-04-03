@@ -1,0 +1,54 @@
+research_company_task:
+  description: >
+    Research the company from this job posting: {job_url}
+    Job description: {job_description}
+
+    Find and compile:
+    1. Company overview (what they do, their mission)
+    2. Company culture and values
+    3. Technology stack they use
+    4. Recent news and developments
+    5. Key requirements from the job posting
+    6. What makes a strong candidate for this role
+  expected_output: >
+    A structured company profile with: company name, industry, size,
+    culture values, tech stack, recent news highlights, and key
+    job requirements extracted from the posting.
+  agent: company_researcher
+
+tailor_resume_task:
+  description: >
+    Analyze this candidate's resume and tailor it for the position:
+
+    RESUME:
+    {resume_text}
+
+    Using the company research and job requirements, optimize the resume by:
+    1. Identifying matching skills and keywords
+    2. Rewriting the professional summary to align with the role
+    3. Highlighting the most relevant experience
+    4. Suggesting improvements for ATS optimization
+    5. Scoring the match (0-100)
+  expected_output: >
+    A tailored resume analysis with: optimized summary, list of highlighted
+    skills that match, keyword matches found, specific improvement suggestions,
+    and a match score from 0-100.
+  agent: resume_tailor
+
+write_cover_letter_task:
+  description: >
+    Write a personalized cover letter for the candidate applying to {company_name}.
+
+    Use the company research and tailored resume analysis to craft a letter that:
+    1. Opens with a compelling hook tied to the company
+    2. Demonstrates knowledge of the company's mission and values
+    3. Highlights 2-3 most relevant experiences from the resume
+    4. Shows genuine enthusiasm for the specific role
+    5. Closes with a confident call-to-action
+
+    Keep it under 400 words. Professional but personable tone.
+  expected_output: >
+    A complete cover letter with: a compelling subject line,
+    the full letter body (under 400 words), and a list of
+    3 key talking points used for personalization.
+  agent: cover_letter_writer
