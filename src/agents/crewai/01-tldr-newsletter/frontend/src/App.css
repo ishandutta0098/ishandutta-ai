@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: #f8fafc;
+  color: #1e293b;
+  min-height: 100vh;
+}
+
+.header {
+  background: #0f172a;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.header p {
+  color: #94a3b8;
+  font-size: 1rem;
+}
+
+.main {
+  max-width: 720px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.input-section {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.topic-input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.topic-input:focus {
+  border-color: #0f172a;
+}
+
+.generate-btn {
+  padding: 0.75rem 1.5rem;
+  background: #0f172a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  white-space: nowrap;
+}
+
+.generate-btn:hover:not(:disabled) {
+  background: #1e293b;
+}
+
+.generate-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.error-banner {
+  background: #fef2f2;
+  color: #dc2626;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  border: 1px solid #fecaca;
+}
+
+.loading {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.loading p {
+  color: #64748b;
+  margin-top: 1rem;
+}
+
+.loading-pulse {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #0f172a;
+  margin: 0 auto;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(0.8); opacity: 0.5; }
+  50% { transform: scale(1.2); opacity: 1; }
+}
+
+.newsletter-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+  line-height: 1.7;
+}
+
+.newsletter-card h1 { font-size: 1.5rem; margin: 1.5rem 0 0.75rem; }
+.newsletter-card h2 { font-size: 1.25rem; margin: 1.25rem 0 0.5rem; color: #0f172a; }
+.newsletter-card h3 { font-size: 1.1rem; margin: 1rem 0 0.5rem; }
+.newsletter-card p { margin-bottom: 0.75rem; }
+.newsletter-card ul, .newsletter-card ol { margin: 0.5rem 0 1rem 1.5rem; }
+.newsletter-card li { margin-bottom: 0.25rem; }
+.newsletter-card a { color: #2563eb; text-decoration: none; }
+.newsletter-card a:hover { text-decoration: underline; }
+.newsletter-card hr { border: none; border-top: 1px solid #e2e8f0; margin: 1.5rem 0; }
+
+@media (max-width: 640px) {
+  .input-section { flex-direction: column; }
+  .header h1 { font-size: 1.5rem; }
+}
